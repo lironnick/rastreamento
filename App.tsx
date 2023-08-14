@@ -56,6 +56,8 @@ export default function App() {
         provider={PROVIDER_GOOGLE}
         ref={mapRef}
         style={styles.map}
+        showsUserLocation={true}
+        zoomEnabled={false}
         initialRegion={{
           latitude: location?.coords.latitude,
           longitude: location?.coords.longitude,
